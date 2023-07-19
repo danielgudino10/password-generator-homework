@@ -3,17 +3,17 @@
 
 // Get references to the #generate element
 document.addEventListener("DOMContentLoaded", function() {
-  const generateBtn = document.querySelector("#generate");
-  const uppercase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ" ;
-  const lowercase = "abcdefghijklmnopqrstuvwxyz" ;
-  const number = "0123456789" ;
-  const symbol = "!@#$%^&*()_+~*><" ;
+  var generateBtn = document.querySelector("#generate");
+  var uppercase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ" ;
+  var lowercase = "abcdefghijklmnopqrstuvwxyz" ;
+  var number = "0123456789" ;
+  var symbol = "!@#$%^&*()_+~*><" ;
 
-  const allchars = uppercase + lowercase + number + symbol ;
+  var allchars = uppercase + lowercase + number + symbol ;
 
   function generatePassword() {
     console.log("you clicked the button!");
-    let password = "";
+    var password = "";
 
     password += uppercase[Math.floor(Math.random() * uppercase.length)]
     password += lowercase[Math.floor(Math.random() * lowercase.length)]
