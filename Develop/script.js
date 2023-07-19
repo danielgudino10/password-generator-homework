@@ -41,4 +41,4 @@ generateBtn.addEventListener("click", function() {
  var password = generatePassword();
   passwordText.value = password;
 });
-.
+
